@@ -18,4 +18,4 @@ Let's help this company to build a nice looking page where products for babies w
 ![Grid View Wireframe](https://github.com/batcheugenio/challenge-eurekalabs/blob/main/screenshots/grid_view.png)
 
 ### List View Wireframe
-![List View Wireframe](https://github.com/eurekalabs-io/challenge-eurekalabs/blob/main/screenshots/list_view.png)
+![List View Wireframe](https://github.com/batcheugenio/challenge-eurekalabs/blob/main/screenshots/list_view.png)
