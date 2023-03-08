@@ -4,12 +4,12 @@ Let's help this company to build a nice looking page where products for babies w
 
 ## Features
 
-- List products showing Image, Title and Product Type. Required. [X]
-- Display amount of results retrieved. Required. [X]
-- Select products view between grid and list for the main display area. Required. [X]
-- Filter products by Product Type. Required. [X]
-- Filter products by Price Range. Optional. [X]
-- Sort results: A-Z, Price: High to Low, Price: Low to High. Optional.
+- [X] List products showing Image, Title and Product Type. Required.
+- [X] Display amount of results retrieved. Required.
+- [X] Select products view between grid and list for the main display area. Required.
+- [X] Filter products by Product Type. Required.
+- [X] Filter products by Price Range. Optional.
+- [] Sort results: A-Z, Price: High to Low, Price: Low to High. Optional.
 
 ## Webpage Design
 
