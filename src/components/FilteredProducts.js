@@ -1,5 +1,5 @@
 import { Grid } from '@mui/material';
-import { every, filter, includes, inRange, isEmpty, some } from 'lodash';
+import { filter, includes, inRange, isEmpty, some } from 'lodash';
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import { selectView } from '../features/Filters/FiltersSlice';

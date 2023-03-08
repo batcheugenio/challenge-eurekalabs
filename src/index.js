@@ -7,7 +7,6 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 
-const container = document.getElementById('root');
 const theme = createTheme({
   palette: {
     primary: {
@@ -30,7 +29,7 @@ const theme = createTheme({
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>¿
+    <Provider store={store}>
       <ThemeProvider theme={theme}>
       <CssBaseline/>
         <App />

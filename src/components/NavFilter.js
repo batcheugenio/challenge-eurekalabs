@@ -4,6 +4,7 @@ import { makeStyles } from "@mui/styles";
 import ProductTypeFilter from "./ProductTypeFilter";
 import RangeSlider from "./RangeSlider";
 import { useGetProductTypesQuery } from "../features/Products/ProductsApi";
+import Loading from "./Loading";
 
 const useStyles = makeStyles((theme) => ({
   heading: {
@@ -26,7 +27,7 @@ function NavFilter({ rangePrice }) {
   const classes = useStyles();
   const { data: productsTypeData, isError, isLoading , error } = useGetProductTypesQuery();
 
-  if(isLoading) return (<>LOADING...</>);
+  if(isLoading) return (<Loading/>);
 
   return (
     <div className={classes.heading}>

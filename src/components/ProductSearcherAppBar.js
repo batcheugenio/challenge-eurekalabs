@@ -84,7 +84,7 @@ export default function ProductSearcherAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            Available deals: {filteredProducts.length}
+            Available deals: <b>{filteredProducts.length}</b>
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>

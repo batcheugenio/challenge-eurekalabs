@@ -40,7 +40,7 @@ const useStyles = makeStyles(theme => ({
   appContent:{
     flexGrow: 1,
     padding: theme.spacing.unit * 3,
-    paddingTop: 40,
+    paddingTop: 64,
     height: 'auto',
   }
 }));
