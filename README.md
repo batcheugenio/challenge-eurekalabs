@@ -9,7 +9,7 @@ Let's help this company to build a nice looking page where products for babies w
 - [X] Select products view between grid and list for the main display area. Required.
 - [X] Filter products by Product Type. Required.
 - [X] Filter products by Price Range. Optional.
-- [] Sort results: A-Z, Price: High to Low, Price: Low to High. Optional.
+- [ ] Sort results: A-Z, Price: High to Low, Price: Low to High. Optional.
 
 ## Webpage Design
 
