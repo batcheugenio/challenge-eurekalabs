@@ -10,10 +10,9 @@ import GridViewIcon from '@mui/icons-material/GridView';
 import ListIcon from '@mui/icons-material/List';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectView, setSortResult, setView } from '../features/Filters/FiltersSlice';
-import { selectFilteredProducts, sortByPriceHighToLow, sortByPriceLowToHigh, sortByTitle } from '../features/Products/ProductsSlice';
-import { FormControl, InputLabel, MenuItem, Select, ToggleButton, ToggleButtonGroup } from '@mui/material';
+import { selectFilteredProducts } from '../features/Products/ProductsSlice';
+import { ToggleButton, ToggleButtonGroup } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import { useState } from 'react';
 
 const useStyles = makeStyles(theme => ({
   search: {
