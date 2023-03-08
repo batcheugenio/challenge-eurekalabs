@@ -1,12 +1,25 @@
+import { Box, Grid } from '@mui/material';
 import React from 'react';
+import { useSelector } from 'react-redux';
 import './App.css';
+import FilteredProducts from './components/FilteredProducts';
 import Layout from './components/Layout';
+import ProductSearcherAppBar from './components/ProductSearcherAppBar';
+import { useGetAllProductsQuery } from './features/Products/ProductsApi';
 
 function App() {
+  const { data: allProductsData, isError, isLoading, error } = useGetAllProductsQuery();
+  const filters = useSelector((state) => state.filters);
+
+  if(isLoading) return (<>LOADING...</>);
+
   return (
     <div className="App">
       <Layout>
-        This is a test!
+        <ProductSearcherAppBar/>
+        <Box p={2}>
+          <FilteredProducts products={allProductsData} filters={filters} />
+        </Box>
       </Layout>
     </div>
   );

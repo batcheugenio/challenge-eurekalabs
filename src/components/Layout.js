@@ -1,7 +1,7 @@
 import React from "react";
-import NavItems from "./NavItems"
 import { AppBar, Toolbar, Typography, Drawer } from "@mui/material";
 import { makeStyles } from "@mui/styles";
+import NavFilter from "./NavFilter";
 
 const useStyles = makeStyles(theme => ({
   // The main flex container for the app's layout. Its min-height
@@ -38,26 +38,20 @@ const useStyles = makeStyles(theme => ({
   // Styles for the content area. It fills the available space
   // in the flex container to the right (or left) of the drawer.
   appContent:{
-    flex: "1 1 100%", // https://github.com/philipwalton/flexbugs#flexbug-17
-    maxWidth: "100%", // https://github.com/philipwalton/flexbugs#flexbug-17
-    paddingTop: 80, // equal to AppBar height + 16px
-    margin: "0 auto",
-    // Set the max content width for each breakpoint
-    // Content will be centered in the space to the right/left of drawer
-    [theme.breakpoints.up("lg")]: {
-      maxWidth: theme.breakpoints.values.lg
-    }
+    flexGrow: 1,
+    padding: theme.spacing.unit * 3,
+    paddingTop: 40,
+    height: 'auto',
   }
 }));
 
 function Layout({ children }) {
   const classes = useStyles();
-
   return (
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.appBar}>
         <Toolbar className={classes.toolbar}>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h4" className={classes.title}>
             Welcome to the Mum's Deal Page!
           </Typography>
         </Toolbar>
@@ -67,7 +61,7 @@ function Layout({ children }) {
         className={classes.drawer}
         classes={{ paper: classes.drawerPaper }}
       >
-        <NavItems />
+        <NavFilter/>
       </Drawer>
       <main className={classes.appContent}>
         {children}
